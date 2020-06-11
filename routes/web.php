@@ -53,4 +53,12 @@ Route::group(['prefix' => 'comment', 'middleware' => 'auth'], function(){
 
 });
 
+// bai tap topic 4
 
+Route::get('eloquen-part-1', 'UserController@indexP1')->name('p1.index');
+
+Route::post('search-p1', 'UserController@searchP1')->name('p1.search');
+
+Route::get('eloquen-part-2', 'UserController@indexP2')->name('p2.index');
+
+Route::post('search-p2', 'UserController@searchP2')->name('p2.search');
